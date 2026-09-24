@@ -1,17 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <meta charset=utf-8>
-  <title>Yodlr Registration Portal</title>
-</head>
-<body>
-  <h1>Yodlr Registration Portal</h1>
-  <form>
-    Email: <input type="email" name="email"></br>
-    <button type="submit">Submit</button>
-  </form>
-  <p>
-    <a href="/admin.html">Admin Page</a>
-  </p>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yodlr Registration Portal</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+
+  <body>
+    <h1 class="display-1 text-center">Yodlr Registration Portal</h1>
+    <ul class="nav nav-tabs justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" href="/index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="/signup.html">Signup</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/admin.html">Admin</a>
+      </li>
+    </ul>
+
+    <form id="signup-form">
+      <div class="mb-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" name="email" id="email" class="form-control mb-3" />
+
+        <label for="first" class="form-label">First Name:</label>
+        <input type="text" name="first" id="first" class="form-control mb-3" />
+
+        <label for="last" class="form-label">Last Name:</label>
+        <input type="text" name="last" id="last" class="form-control mb-3" />
+
+        <div class="d-flex justify-content-end">
+          <button type="submit" class="btn btn-primary" disabled>Submit</button>
+        </div>
+      </div>
+    </form>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/signup.js"></script>
+  </body>
 </html>
